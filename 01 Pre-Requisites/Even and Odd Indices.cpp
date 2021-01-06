@@ -12,7 +12,7 @@ Next line will have a line containing ‘n’ space separated integers.
 
 Constraints:
 1 <= n <= 10^5
-1 <= Ai <= 10^6 
+1 <= Ai <= 10^6
 
 Output:
 Two space separated integers denoting even and odd sums respectively.
@@ -25,27 +25,23 @@ Sample Output:
 6 4
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
-{
+int main() {
     int n;
     cin >> n;
-    int osum = 0 , esum = 0;
-    
-    for(int i = 0; i < n; i++){
+    int osum = 0, esum = 0;
+
+    for (int i = 0; i < n; i++) {
         int x;
         cin >> x;
-        if(i % 2){
-            if(x % 2)
-                osum += x;
-        }
-        else{
-            if(x % 2 == 0)
-                esum += x;
+        if (i % 2) {
+            if (x % 2) osum += x;
+        } else {
+            if (x % 2 == 0) esum += x;
         }
     }
-    
+
     cout << esum << " " << osum << "\n";
-	return 0;
+    return 0;
 }
