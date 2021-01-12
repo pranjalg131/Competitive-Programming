@@ -21,6 +21,8 @@ Sample Input :
 
 Sample Output :
 1
+
+this was an easy problem
 */
 
 #include <bits/stdc++.h>
